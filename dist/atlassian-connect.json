@@ -1,0 +1,26 @@
+{
+    "name": "Hello World",
+    "description": "Atlassian Connect app",
+    "key": "com.example.myapp",
+    "baseUrl":"https://9211-117-98-114-35.ngrok.io",
+    "vendor": {
+        "name": "Example, Inc.",
+        "url": "http://example.com"
+    },
+    "authentication": {
+        "type": "none"
+    },
+    "apiVersion": 1,
+    "modules": {
+        "generalPages": [
+            {
+                "url": "/index.html",
+                "key": "hello-world",
+                "location": "system.top.navigation.bar",
+                "name": {
+                    "value": "Greeting"
+                }
+            }
+        ]
+    }
+}
