@@ -1,11 +1,20 @@
 import React from 'react';
-import DropdownMenuDefaultExample from './DropdownMenuDefaultExample';
-
 function App() {
+  const fun=()=>{
+    //TODO:Fetching the api 
+    AP.request('/rest/api/2/search?jql=', {
+      success: function(responseText){
+        alert(responseText);
+      },
+      error:function(){
+        alert("Error");
+      }
+      });
+     } 
   return (
-    <div>
-     <DropdownMenuDefaultExample></DropdownMenuDefaultExample>   
-    </div>
+   <center>
+    <button onClick={fun}>click</button>
+   </center>
   );
 }
 
